@@ -1,0 +1,4 @@
+.venv
+processed/
+outputs/
+notebooks/.ipynb_checkpoints

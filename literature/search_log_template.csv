@@ -1,0 +1,2 @@
+search_id,date,searcher,database,search_string,fields_searched,limits_applied,results_n,records_exported_n,notes
+S01,2026-11-02,,PubMed,"(""medication adherence""[MeSH] OR adherence OR compliance) AND (hypertension[MeSH] OR ""blood pressure"") AND (""primary health care""[MeSH] OR ""primary care"" OR ""general practice"")",All fields,"2015 onwards; English",,,"Example row: replace with your own search"

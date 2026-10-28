@@ -1,0 +1,11 @@
+field_name,field_label,choices
+record_id,Synthetic patient identifier,
+clinic,Primary-care clinic,"1, North | 2, East | 3, South | 4, West"
+age,Age (years),
+sex,Recorded sex,"1, Female | 2, Male"
+bmi,Body mass index (kg/m2),
+systolic_bp,Systolic BP (mmHg),
+diastolic_bp,Diastolic BP (mmHg),
+smoking_status,Smoking status,"0, Never | 1, Former | 2, Current"
+medication_adherence,Medication adherence score (%),
+diabetes,Diabetes diagnosis,"0, No | 1, Yes"

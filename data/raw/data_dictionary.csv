@@ -1,0 +1,16 @@
+variable,definition,type,valid_values_or_range,cleaning_and_interpretation_notes
+patient_id,Synthetic patient identifier,string,PC0001–PC0640,Unique after cleaning; no real identifiers
+visit_date,Recorded clinic visit/export date,date,2026-01-05 to 2026-06-03,Parse mixed source formats to ISO YYYY-MM-DD
+clinic,Primary-care clinic,categorical,North; East; South; West,Trim whitespace and standardize case
+age,Age at recorded visit,integer,18–85 years,Values outside range become missing
+sex,Recorded sex category,categorical,Female; Male,Unknown/missing remains missing; not a gender-identity measure
+bmi,Body mass index,numeric,10–70 kg/m²,Values outside teaching range become missing
+systolic_bp,Systolic blood pressure,numeric,70–260 mmHg,Single teaching measurement; not a clinical average
+diastolic_bp,Diastolic blood pressure,numeric,40–160 mmHg,Single teaching measurement
+hba1c,Glycated haemoglobin,numeric,3–20%,Descriptive variable; substantial missingness is intentional
+smoking_status,Self-recorded smoking status,categorical,Never; Former; Current,Standardize spelling/case
+physical_activity_min,Self-reported weekly activity,numeric,0–1500 minutes/week,Inspect skew and implausible values
+medication_adherence,Medication adherence score,numeric,0–100%,Main exposure; higher means better reported adherence
+diabetes,Recorded diabetes diagnosis,binary,0 = no; 1 = yes,Covariate
+followup_visits_6m,Follow-up visits in six months,integer count,0 or more,Optional descriptive outcome
+uncontrolled_bp,Course-defined blood-pressure outcome,binary,0 = controlled; 1 = uncontrolled,Derived: SBP ≥140 or DBP ≥90 mmHg; teaching definition only
